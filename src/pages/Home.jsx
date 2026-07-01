@@ -5,6 +5,7 @@ import Timeline from "@/components/steinmeyer/Timeline";
 import Architecture from "@/components/steinmeyer/Architecture";
 import Spaces from "@/components/steinmeyer/Spaces";
 import District from "@/components/steinmeyer/District";
+import LocationMap from "@/components/steinmeyer/LocationMap";
 import Contact from "@/components/steinmeyer/Contact";
 import Footer from "@/components/steinmeyer/Footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Architecture />
       <Spaces />
       <District />
+      <LocationMap />
       <Contact />
       <Footer />
     </div>
