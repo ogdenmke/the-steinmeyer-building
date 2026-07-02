@@ -23,11 +23,6 @@ const STEINMEYER_POS = [43.04418, -87.91432];
 const nearbyMarkers = [
   { name: "Turner Hall", position: [43.04455, -87.91398], description: "Historic 1882 gymnasium and cultural hub — about 400 feet away" },
   { name: "Pere Marquette Historic Site", position: [43.04390, -87.91500], description: "Site of early French exploration — about 500 feet away" },
-  { name: "Invention of the Typewriter", position: [43.04470, -87.91470], description: "Birthplace of the modern typewriter — about 700 feet away" },
-  { name: "Robert \"Red\" Wilson", position: [43.04340, -87.91460], description: "Milwaukee civic history marker — about 800 feet away" },
-  { name: "Robert Stuckert", position: [43.04490, -87.91380], description: "Milwaukee civic history marker — about 800 feet away" },
-  { name: "Kilbourntown", position: [43.04430, -87.91390], description: "One of Milwaukee's three original towns — shouting distance" },
-  { name: "Beer Line Neighborhood", position: [43.04400, -87.91450], description: "Milwaukee's amber brewing past — shouting distance" },
 ];
 
 export default function LocationMap() {
@@ -63,8 +58,8 @@ export default function LocationMap() {
               style={{ height: "500px", width: "100%" }}
             >
               <TileLayer
-                attribution='&copy; OpenStreetMap contributors'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+                url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
               />
               <Marker position={STEINMEYER_POS} icon={steinmeyerIcon}>
                 <Popup>
