@@ -58,6 +58,7 @@ export default function LocationMap() {
               center={STEINMEYER_POS}
               zoom={17}
               scrollWheelZoom={false}
+              attributionControl={false}
               style={{ height: "500px", width: "100%" }}
             >
               <TileLayer
