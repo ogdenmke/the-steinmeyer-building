@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Send, Phone, MapPin, Clock } from "lucide-react";
+import { Send, Phone, MapPin, Clock, Mail } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
+import { base44 } from "@/api/base44Client";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -24,8 +25,11 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
-    // Simulate send delay
-    await new Promise((r) => setTimeout(r, 1200));
+    await base44.integrations.Core.SendEmail({
+      to: "richardr@ogdenre.com",
+      subject: `Leasing Inquiry from ${form.name}`,
+      body: `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\nPhone: ${form.phone}\nInterested In: ${form.interest}\n\nMessage:\n${form.message}`,
+    });
     toast({
       title: "Inquiry Received",
       description: "Our leasing team will be in touch within 24 hours.",
@@ -79,8 +83,19 @@ export default function Contact() {
                     <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
                       Leasing Office
                     </span>
-                    <a href="tel:+14145551893" className="font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
-                      (414) 555-1893
+                    <a href="tel:+14142701351" className="font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
+                      (414) 270-1351
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Mail size={18} className="text-[#8E795E] mt-1 shrink-0" />
+                  <div>
+                    <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
+                      Email
+                    </span>
+                    <a href="mailto:richardr@ogdenre.com" className="font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
+                      richardr@ogdenre.com
                     </a>
                   </div>
                 </div>
@@ -91,8 +106,7 @@ export default function Contact() {
                       Showings
                     </span>
                     <p className="font-body text-[#1A1A1A]">
-                      Monday – Friday, 9 AM – 5 PM<br />
-                      <span className="text-[#1A1A1A]/50 text-sm">Weekend showings by appointment</span>
+                      Visit listing page for details
                     </p>
                   </div>
                 </div>
