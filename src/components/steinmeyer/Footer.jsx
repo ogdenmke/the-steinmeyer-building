@@ -70,11 +70,11 @@ export default function Footer() {
             <div className="space-y-3 font-body text-sm text-[#FDFCF8]/50">
               <p>205 West Highland Avenue</p>
               <p>Milwaukee, WI 53203</p>
-              <a href="tel:+14145551893" className="block hover:text-[#8E795E] transition-colors">
-                (414) 555-1893
+              <a href="tel:+14142701351" className="block hover:text-[#8E795E] transition-colors">
+                (414) 270-1351
               </a>
-              <a href="mailto:leasing@steinmeyerbuilding.com" className="block hover:text-[#8E795E] transition-colors">
-                leasing@steinmeyerbuilding.com
+              <a href="mailto:richardr@ogdenre.com" className="block hover:text-[#8E795E] transition-colors">
+                richardr@ogdenre.com
               </a>
             </div>
           </div>
