@@ -23,6 +23,9 @@ const STEINMEYER_POS = [43.04418, -87.91432];
 const nearbyMarkers = [
   { name: "Turner Hall", position: [43.04455, -87.91398], description: "Historic 1882 gymnasium and cultural hub — about 400 feet away" },
   { name: "Pere Marquette Historic Site", position: [43.04390, -87.91500], description: "Site of early French exploration — about 500 feet away" },
+  { name: "Milwaukee Public Market", position: [43.03985, -87.90930], description: "Beloved indoor market in the Historic Third Ward — about 0.6 miles away" },
+  { name: "Fiserv Forum", position: [43.04455, -87.91700], description: "Home of the Milwaukee Bucks — about 0.2 miles away" },
+  { name: "Milwaukee River Walk", position: [43.04100, -87.90980], description: "Scenic riverside promenade through downtown — about 0.5 miles away" },
 ];
 
 export default function LocationMap() {
