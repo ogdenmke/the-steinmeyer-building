@@ -25,17 +25,26 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSending(true);
-    await base44.integrations.Core.SendEmail({
-      to: "richardr@ogdenre.com",
-      subject: `Leasing Inquiry from ${form.name}`,
-      body: `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\nPhone: ${form.phone}\nInterested In: ${form.interest}\n\nMessage:\n${form.message}`,
-    });
-    toast({
-      title: "Inquiry Received",
-      description: "Our leasing team will be in touch within 24 hours.",
-    });
-    setForm({ name: "", company: "", email: "", phone: "", interest: "", message: "" });
-    setSending(false);
+    try {
+      await base44.integrations.Core.SendEmail({
+        to: "richardr@ogdenre.com",
+        subject: `Leasing Inquiry from ${form.name}`,
+        body: `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\nPhone: ${form.phone}\nInterested In: ${form.interest}\n\nMessage:\n${form.message}`,
+      });
+      toast({
+        title: "Inquiry Received",
+        description: "Our leasing team will be in touch within 24 hours.",
+      });
+      setForm({ name: "", company: "", email: "", phone: "", interest: "", message: "" });
+    } catch (err) {
+      toast({
+        title: "Something went wrong",
+        description: "We couldn't send your inquiry. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   const inputClass =
