@@ -4,6 +4,7 @@ import Hero from "@/components/steinmeyer/Hero";
 import Timeline from "@/components/steinmeyer/Timeline";
 import Architecture from "@/components/steinmeyer/Architecture";
 import Spaces from "@/components/steinmeyer/Spaces";
+import Tenants from "@/components/steinmeyer/Tenants";
 import District from "@/components/steinmeyer/District";
 import LocationMap from "@/components/steinmeyer/LocationMap";
 import Contact from "@/components/steinmeyer/Contact";
@@ -14,9 +15,10 @@ export default function Home() {
     <div className="bg-[#FDFCF8] min-h-screen">
       <Navbar />
       <Hero />
-      <Timeline />
       <Architecture />
+      <Timeline />
       <Spaces />
+      <Tenants />
       <District />
       <LocationMap />
       <Contact />

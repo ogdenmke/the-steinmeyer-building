@@ -5,6 +5,8 @@ import { MapPin } from "lucide-react";
 const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ac0fed68d_generated_df4b2f7a.png";
 
 const landmarks = [
+  { name: "The New Riverside Plaza", distance: "Adjacent", paces: "Next Door", description: "A major new public plaza under construction, right beside the building" },
+  { name: "Fiserv Forum", distance: "~1 block", paces: "~350 paces", description: "Home of the Milwaukee Bucks" },
   { name: "Turner Hall", distance: "~400 ft", paces: "~150 paces", description: "Historic 1882 gymnasium and cultural hub" },
   { name: "Pere Marquette Historic Site", distance: "~500 ft", paces: "~190 paces", description: "Site of early French exploration" },
   { name: "Invention of the Typewriter", distance: "~700 ft", paces: "~260 paces", description: "Birthplace of the modern typewriter" },
@@ -66,11 +68,27 @@ export default function District() {
               Old World<br />Third Street
             </h2>
             <p className="font-body text-[#FDFCF8]/60 text-base md:text-lg max-w-2xl leading-[1.7]">
-              The Steinmeyer Building sits at the heart of one of Milwaukee's most historically 
-              dense neighborhoods — a walkable grid of landmarks that chart the city's journey 
-              from fur trading post to industrial powerhouse. Part of the National Register's 
-              Old World Third Street Historic District, within the vibrant Westown neighborhood.
+              The Steinmeyer Building sits directly along the Milwaukee River, at the heart of 
+              one of the city's most historically dense neighborhoods — a walkable grid of 
+              landmarks that chart the city's journey from fur trading post to industrial 
+              powerhouse. It's just one block from Fiserv Forum and one block from another 
+              City of Milwaukee landmark building, all part of the National Register's Old World 
+              Third Street Historic District within the vibrant Westown neighborhood.
             </p>
+
+            <div className="mt-10 border-2 border-[#8E795E] p-8 md:p-10 bg-[#8E795E]/10">
+              <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-3">
+                Coming Soon — Right Next Door
+              </span>
+              <h3 className="font-heading font-bold text-2xl md:text-3xl text-[#FDFCF8] tracking-tight mb-3">
+                A New Riverside Plaza is Being Built Adjacent to the Building
+              </h3>
+              <p className="font-body text-[#FDFCF8]/70 text-base md:text-lg leading-[1.7]">
+                A major new public plaza is under construction immediately next door, extending 
+                the Steinmeyer Building's riverfront presence and bringing fresh energy, 
+                gathering space, and foot traffic directly to its doorstep.
+              </p>
+            </div>
           </div>
 
           {/* District image */}

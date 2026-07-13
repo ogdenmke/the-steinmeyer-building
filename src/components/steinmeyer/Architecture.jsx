@@ -13,6 +13,7 @@ const specs = [
   { label: "Landmark Status", value: "1974, City of Milwaukee" },
   { label: "National Register", value: "Old World 3rd St. Historic District" },
   { label: "Location", value: "205 W. Highland Ave, Milwaukee" },
+  { label: "Subdivision", value: "Full floors or subdivided suites available" },
 ];
 
 export default function Architecture() {
@@ -39,7 +40,9 @@ export default function Architecture() {
             <p className="font-body text-[#1A1A1A]/70 text-lg md:text-xl max-w-2xl leading-[1.7]">
               An example of simplified Romanesque Revival Commercial Style architecture, 
               the Steinmeyer Building represents the pinnacle of late 19th-century commercial 
-              design in Milwaukee's Westown district.
+              design in Milwaukee's Westown district — distinguished by its warm cream city 
+              brick facade and interiors lined with exposed original wood beams. Floors can be 
+              leased in full or subdivided into smaller suites to fit any tenant's footprint.
             </p>
           </div>
 
