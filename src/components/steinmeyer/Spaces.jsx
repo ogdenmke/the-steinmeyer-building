@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
-const LISTINGS_URL = "https://ogdenmke.github.io/MilwaukeeOfficeSpace/";
+const LISTINGS_URL = "https://ogdenmke.github.io/MilwaukeeOfficeSpace/building.html?id=STN";
 
 export default function Spaces() {
   const headerRef = useRef(null);
