@@ -5,8 +5,8 @@ import { MapPin } from "lucide-react";
 const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ac0fed68d_generated_df4b2f7a.png";
 
 const landmarks = [
-{ name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks and the city's premier downtown arena district" },
-{ name: "Turner Hall", distance: "~400 ft", description: "Historic 1882 gymnasium and cultural hub" },
+{ name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks, Marquette University, and the city's premier downtown arena district" },
+{ name: "Turner Hall", distance: "~400 ft", description: "Historic 1882 gymnasium, event venue, and cultural hub" },
 { name: "Pere Marquette Historic Site", distance: "~500 ft", description: "Site of early French exploration on the Milwaukee River" },
 { name: "Landmark Credit Union Live", distance: "~1 block", description: "A vibrant downtown park and outdoor event space beside Fiserv Forum" },
 { name: "Marcus Performing Arts Center", distance: "~2 blocks", description: "Milwaukee's home for ballet, opera, symphony, and touring Broadway shows" },
