@@ -146,7 +146,7 @@ export default function District() {
                 Mississippian Culture · Northwest Territory
               </p>
             </div>
-            <div className="border border-[#FDFCF8]/10 p-6">
+            <div className="border border-[#FDFCF8]/10 p-6 hidden">
               <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-2">
                 Coordinates
               </span>
