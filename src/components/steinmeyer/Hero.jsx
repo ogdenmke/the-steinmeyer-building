@@ -19,23 +19,15 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-end pb-16 md:pb-24 px-6 md:px-12 max-w-7xl mx-auto">
-        {/* Split title */}
-        <div className="flex items-end justify-between mb-6">
+        {/* Title */}
+        <div className="mb-6">
           <motion.h1
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
             className="font-heading font-black text-[#FDFCF8] text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[-0.03em] leading-none"
           >
-            STEIN
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="font-heading font-black text-[#FDFCF8] text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-[-0.03em] leading-none"
-          >
-            MEYER
+            STEINMEYER
           </motion.h1>
         </div>
 

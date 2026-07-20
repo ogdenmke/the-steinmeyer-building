@@ -3,9 +3,9 @@ import { motion, useInView } from "framer-motion";
 import { Store } from "lucide-react";
 
 const tenants = [
-  { name: "Lucky Clover", description: "A neighborhood favorite bringing warmth and community to the ground floor." },
-  { name: "Red White & Blue Bar (RWB)", description: "A lively local bar anchoring the building's street-level energy." },
+  { name: "Edelweiss Cruises", description: "Scenic boat tours showcasing Milwaukee from a whole new perspective." },
   { name: "The Cheese Shop", description: "A Wisconsin classic, serving the city's finest cheese and specialty goods." },
+  { name: "Lucky Clover & RWB", description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy." },
 ];
 
 export default function Tenants() {
