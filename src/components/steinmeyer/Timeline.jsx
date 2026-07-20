@@ -92,10 +92,10 @@ function TimelineCard({ event, index }) {
         {/* Image side */}
         <div className={`${isEven ? "md:order-2" : "md:order-1"}`}>
           <div className="relative group overflow-hidden arch-radius-subtle">
-            <img
-              src={event.image}
-              alt={event.imageAlt}
-              className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" />
+            <img src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/e2ba514da_506239506_10237475501216244_2098405604358221980_n.jpg"
+
+            alt={event.imageAlt}
+            className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" />
             
             <div className="absolute inset-0 bg-[#8E795E]/0 group-hover:bg-[#8E795E]/10 transition-colors duration-500 hidden" />
           </div>
