@@ -146,14 +146,14 @@ export default function District() {
                 Mississippian Culture · Northwest Territory
               </p>
             </div>
-            <div className="border border-[#FDFCF8]/10 p-6 hidden">
-              <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-2">
-                Coordinates
-              </span>
-              <p className="font-mono text-sm text-[#FDFCF8]/60">
-                43° 2.651′ N, 87° 54.859′ W
-              </p>
-            </div>
+            
+
+
+
+
+
+
+            
           </div>
         </motion.div>
       </div>
