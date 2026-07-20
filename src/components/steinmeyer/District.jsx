@@ -61,7 +61,7 @@ export default function District() {
             <h2 className="font-heading font-black text-4xl md:text-6xl text-[#FDFCF8] tracking-tight mb-6">
               Old World<br />Third Street
             </h2>
-            <p className="font-body text-[#FDFCF8]/60 text-base md:text-lg max-w-2xl leading-[1.7]">The Steinmeyer Building sits directly along the Milwaukee River, at the heart of one of the city's most historically dense neighborhoods — a walkable grid of landmarks that chart the city's journey from fur trading post to industrial powerhouse. Located near the Deer District, which includes Fiserv Forum, Landmark Credit Union Live,  Turner Hall, and more. all part of the National Register's Old World Third Street Historic District within the vibrant Westown neighborhood.
+            <p className="font-body text-[#FDFCF8]/60 text-base md:text-lg max-w-2xl leading-[1.7]">The Steinmeyer Building sits directly along the Milwaukee River, at the heart of one of the city's most historically dense neighborhoods — a walkable grid of landmarks that chart the city's journey from fur trading post to industrial powerhouse. Located near the Deer District, which includes Fiserv Forum, Landmark Credit Union Live, Turner Hall, and more. and apart of the National Register's Old World Third Street Historic District within the vibrant Westown neighborhood.
 
 
 
