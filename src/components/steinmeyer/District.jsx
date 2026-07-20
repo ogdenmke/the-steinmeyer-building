@@ -5,14 +5,14 @@ import { MapPin } from "lucide-react";
 const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ac0fed68d_generated_df4b2f7a.png";
 
 const landmarks = [
-  { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks and the city's premier downtown arena district" },
-  { name: "Turner Hall", distance: "~400 ft", description: "Historic 1882 gymnasium and cultural hub" },
-  { name: "Pere Marquette Historic Site", distance: "~500 ft", description: "Site of early French exploration on the Milwaukee River" },
-  { name: "Landmark Credit Union Live", distance: "~1 block", description: "A vibrant downtown park and outdoor event space beside Fiserv Forum" },
-  { name: "Marcus Performing Arts Center", distance: "~2 blocks", description: "Milwaukee's home for ballet, opera, symphony, and touring Broadway shows" },
-  { name: "Nature & Culture Museum of Wisconsin", distance: "~0.3 mi", description: "A community museum celebrating the region's natural and cultural heritage" },
-  { name: "UW-Milwaukee Panther Arena", distance: "~3 blocks", description: "Historic downtown arena and longtime Milwaukee sports and concert venue" },
-];
+{ name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks and the city's premier downtown arena district" },
+{ name: "Turner Hall", distance: "~400 ft", description: "Historic 1882 gymnasium and cultural hub" },
+{ name: "Pere Marquette Historic Site", distance: "~500 ft", description: "Site of early French exploration on the Milwaukee River" },
+{ name: "Landmark Credit Union Live", distance: "~1 block", description: "A vibrant downtown park and outdoor event space beside Fiserv Forum" },
+{ name: "Marcus Performing Arts Center", distance: "~2 blocks", description: "Milwaukee's home for ballet, opera, symphony, and touring Broadway shows" },
+{ name: "Nature & Culture Museum of Wisconsin", distance: "~0.3 mi", description: "A community museum celebrating the region's natural and cultural heritage" },
+{ name: "UW-Milwaukee Panther Arena", distance: "~3 blocks", description: "Historic downtown arena and longtime Milwaukee sports and concert venue" }];
+
 
 function LandmarkRow({ landmark, index }) {
   const ref = useRef(null);
@@ -24,8 +24,8 @@ function LandmarkRow({ landmark, index }) {
       initial={{ opacity: 0, x: -30 }}
       animate={isInView ? { opacity: 1, x: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.08 }}
-      className="grid grid-cols-12 gap-4 items-baseline py-5 border-b border-[#8E795E]/10 group hover:bg-[#F5F0E8]/50 px-4 -mx-4 transition-colors"
-    >
+      className="grid grid-cols-12 gap-4 items-baseline py-5 border-b border-[#8E795E]/10 group hover:bg-[#F5F0E8]/50 px-4 -mx-4 transition-colors">
+      
       <div className="col-span-12 md:col-span-5">
         <h4 className="font-heading font-semibold text-sm md:text-base text-[#1A1A1A] tracking-tight group-hover:text-[#8E795E] transition-colors">
           {landmark.name}
@@ -36,8 +36,8 @@ function LandmarkRow({ landmark, index }) {
           {landmark.description}
         </p>
       </div>
-    </motion.div>
-  );
+    </motion.div>);
+
 }
 
 export default function District() {
@@ -51,8 +51,8 @@ export default function District() {
           ref={headerRef}
           initial={{ opacity: 0, y: 40 }}
           animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           {/* Header */}
           <div className="mb-16 md:mb-24">
             <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
@@ -61,13 +61,13 @@ export default function District() {
             <h2 className="font-heading font-black text-4xl md:text-6xl text-[#FDFCF8] tracking-tight mb-6">
               Old World<br />Third Street
             </h2>
-            <p className="font-body text-[#FDFCF8]/60 text-base md:text-lg max-w-2xl leading-[1.7]">
-              The Steinmeyer Building sits directly along the Milwaukee River, at the heart of 
-              one of the city's most historically dense neighborhoods — a walkable grid of 
-              landmarks that chart the city's journey from fur trading post to industrial 
-              powerhouse. It's just one block from Fiserv Forum and one block from another 
-              City of Milwaukee landmark building, all part of the National Register's Old World 
-              Third Street Historic District within the vibrant Westown neighborhood.
+            <p className="font-body text-[#FDFCF8]/60 text-base md:text-lg max-w-2xl leading-[1.7]">The Steinmeyer Building sits directly along the Milwaukee River, at the heart of one of the city's most historically dense neighborhoods — a walkable grid of landmarks that chart the city's journey from fur trading post to industrial powerhouse. Located near  all part of the National Register's Old World Third Street Historic District within the vibrant Westown neighborhood.
+
+
+
+
+
+
             </p>
 
             <div className="mt-10 border-2 border-[#8E795E] p-8 md:p-10 bg-[#8E795E]/10">
@@ -90,8 +90,8 @@ export default function District() {
             <img
               src={DISTRICT_IMG}
               alt="Aerial view of Milwaukee's Westown neighborhood and Old World Third Street"
-              className="w-full aspect-[21/9] object-cover opacity-80"
-            />
+              className="w-full aspect-[21/9] object-cover opacity-80" />
+            
           </div>
 
           {/* Landmark listing */}
@@ -110,8 +110,8 @@ export default function District() {
             </div>
 
             <div className="divide-y-0">
-              {landmarks.map((l, i) => (
-                <div key={l.name} className="grid grid-cols-12 gap-4 items-baseline py-5 border-b border-[#FDFCF8]/10 group hover:bg-[#FDFCF8]/5 px-4 -mx-4 transition-colors">
+              {landmarks.map((l, i) =>
+              <div key={l.name} className="grid grid-cols-12 gap-4 items-baseline py-5 border-b border-[#FDFCF8]/10 group hover:bg-[#FDFCF8]/5 px-4 -mx-4 transition-colors">
                   <div className="col-span-12 md:col-span-5">
                     <h4 className="font-heading font-semibold text-sm md:text-base text-[#FDFCF8] tracking-tight group-hover:text-[#8E795E] transition-colors flex items-center gap-2">
                       <MapPin size={14} className="text-[#8E795E] shrink-0" />
@@ -124,7 +124,7 @@ export default function District() {
                     </p>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
 
@@ -157,6 +157,6 @@ export default function District() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
