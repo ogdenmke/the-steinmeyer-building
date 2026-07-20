@@ -5,14 +5,13 @@ import { MapPin } from "lucide-react";
 const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ac0fed68d_generated_df4b2f7a.png";
 
 const landmarks = [
-  { name: "The New Riverside Plaza", distance: "Adjacent", paces: "Next Door", description: "A major new public plaza under construction, right beside the building" },
-  { name: "Fiserv Forum", distance: "~1 block", paces: "~350 paces", description: "Home of the Milwaukee Bucks" },
-  { name: "Turner Hall", distance: "~400 ft", paces: "~150 paces", description: "Historic 1882 gymnasium and cultural hub" },
-  { name: "Pere Marquette Historic Site", distance: "~500 ft", paces: "~190 paces", description: "Site of early French exploration" },
-  { name: "Invention of the Typewriter", distance: "~700 ft", paces: "~260 paces", description: "Birthplace of the modern typewriter" },
-  { name: "Beer Line Neighborhood", distance: "Adjacent", paces: "Shouting distance", description: "Milwaukee's amber brewing past" },
-  { name: "Kilbourntown", distance: "Adjacent", paces: "Shouting distance", description: "One of Milwaukee's three original towns" },
-  { name: "Robert \"Red\" Wilson Memorial", distance: "~800 ft", paces: "~300 paces", description: "Milwaukee civic history" },
+  { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks and the city's premier downtown arena district" },
+  { name: "Turner Hall", distance: "~400 ft", description: "Historic 1882 gymnasium and cultural hub" },
+  { name: "Pere Marquette Historic Site", distance: "~500 ft", description: "Site of early French exploration on the Milwaukee River" },
+  { name: "Landmark Credit Union Live", distance: "~1 block", description: "A vibrant downtown park and outdoor event space beside Fiserv Forum" },
+  { name: "Marcus Performing Arts Center", distance: "~2 blocks", description: "Milwaukee's home for ballet, opera, symphony, and touring Broadway shows" },
+  { name: "Nature & Culture Museum of Wisconsin", distance: "~0.3 mi", description: "A community museum celebrating the region's natural and cultural heritage" },
+  { name: "UW-Milwaukee Panther Arena", distance: "~3 blocks", description: "Historic downtown arena and longtime Milwaukee sports and concert venue" },
 ];
 
 function LandmarkRow({ landmark, index }) {
@@ -32,15 +31,10 @@ function LandmarkRow({ landmark, index }) {
           {landmark.name}
         </h4>
       </div>
-      <div className="col-span-6 md:col-span-4">
+      <div className="col-span-12 md:col-span-7">
         <p className="font-body text-sm text-[#1A1A1A]/50">
           {landmark.description}
         </p>
-      </div>
-      <div className="col-span-6 md:col-span-3 text-right">
-        <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#8E795E]">
-          {landmark.paces}
-        </span>
       </div>
     </motion.div>
   );
@@ -108,14 +102,9 @@ export default function District() {
                   Landmark
                 </span>
               </div>
-              <div className="hidden md:block col-span-4">
+              <div className="hidden md:block col-span-7">
                 <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#FDFCF8]/30">
                   Significance
-                </span>
-              </div>
-              <div className="hidden md:block col-span-3 text-right">
-                <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#FDFCF8]/30">
-                  Distance in Paces
                 </span>
               </div>
             </div>
@@ -129,15 +118,10 @@ export default function District() {
                       {l.name}
                     </h4>
                   </div>
-                  <div className="col-span-6 md:col-span-4">
+                  <div className="col-span-12 md:col-span-7">
                     <p className="font-body text-sm text-[#FDFCF8]/40">
                       {l.description}
                     </p>
-                  </div>
-                  <div className="col-span-6 md:col-span-3 text-right">
-                    <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#8E795E]">
-                      {l.paces}
-                    </span>
                   </div>
                 </div>
               ))}
