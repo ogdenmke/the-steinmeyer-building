@@ -75,10 +75,10 @@ export default function District() {
                 Coming Soon — Right Next Door
               </span>
               <h3 className="font-heading font-bold text-2xl md:text-3xl text-[#FDFCF8] tracking-tight mb-3">
-                A New Riverside Plaza is Being Built Adjacent to the Building
+                The New Gary Grunua Plaza is Being Built Adjacent to the Building
               </h3>
               <p className="font-body text-[#FDFCF8]/70 text-base md:text-lg leading-[1.7]">
-                A major new public plaza is under construction immediately next door, extending 
+                The new Gary Grunua Plaza is under construction immediately next door, extending 
                 the Steinmeyer Building's riverfront presence and bringing fresh energy, 
                 gathering space, and foot traffic directly to its doorstep.
               </p>
