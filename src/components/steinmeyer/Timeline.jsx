@@ -6,47 +6,47 @@ const PLAQUE_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9
 const MODERN_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/fcd02eabd_generated_e5f68f48.png";
 
 const timelineEvents = [
-  {
-    year: "1893",
-    era: "The Founding",
-    title: "A Grocery Empire Rises",
-    description:
-      "William Steinmeyer commissions architects George B. Ferry and Alfred C. Clas to design a wholesale and retail grocery headquarters on Old World Third Street. The first phase — the entire Highland Avenue facade and three northern bays — is erected in the simplified Romanesque Revival Commercial Style that would define Westown's architectural character.",
-    detail: "The building's heavy masonry, rounded arches, and deep-set windows reflect the structural confidence of a city at the height of its industrial boom. Milwaukee's cream city brick, drawn from the silts of the Milwaukee River, gives the facade its distinctive warm pallor.",
-    image: HISTORICAL_IMG,
-    imageAlt: "Interior of the 1893 Steinmeyer wholesale grocery warehouse",
-  },
-  {
-    year: "1898",
-    era: "The Expansion",
-    title: "The Southern Addition",
-    description:
-      "Steinmeyer's growing enterprise demands more space. Two additional bays are added to the south along Old World Third Street, seamlessly continuing Ferry & Clas's original design language. The expanded building now occupies the full corner lot, anchoring the intersection of Highland Avenue and Third Street.",
-    detail: "The expansion maintains perfect architectural continuity — the same arched fenestration, cornice line, and masonry detailing — a testament to the original architects' foresight and the building's enduring commercial ambition.",
-    image: PLAQUE_IMG,
-    imageAlt: "The Milwaukee Landmarks Commission bronze plaque on the Steinmeyer Building",
-  },
-  {
-    year: "1974",
-    era: "The Designation",
-    title: "A Milwaukee Landmark",
-    description:
-      "The City of Milwaukee Landmarks Commission designates the Steinmeyer Building as a Milwaukee Landmark, recognizing its historical and architectural significance to the community. A bronze plaque is erected at the Highland Avenue entrance, permanently inscribing the building's legacy into the city's official record.",
-    detail: "The inscription reads: \"Designed by G. B. Ferry and A. C. Clas, erected in 1893 and later for the wholesale and retail grocery firm founded by William Steinmeyer, and designated as a Milwaukee Landmark in 1974 in recognition of its historical and architectural significance to the community.\"",
-    image: PLAQUE_IMG,
-    imageAlt: "The Steinmeyer Building landmark designation plaque",
-  },
-  {
-    year: "Today",
-    era: "The Renaissance",
-    title: "Heritage Meets the Modern Workplace",
-    description:
-      "The ground floor has been thoughtfully adapted for retail, while the upper stories have been converted into distinctive office spaces. Original 12-foot ceilings, exposed cream city brick, and massive arched windows now frame contemporary workplaces that honor 130 years of continuous commercial purpose.",
-    detail: "Listed on the National Register of Historic Places as part of the Old World Third Street Historic District, the Steinmeyer Building stands as proof that the best architecture transcends its era. Its next chapter is being written now.",
-    image: MODERN_IMG,
-    imageAlt: "Modern office interior inside the Steinmeyer Building",
-  },
-];
+{
+  year: "1893",
+  era: "The Founding",
+  title: "A Grocery Empire Rises",
+  description:
+  "William Steinmeyer commissions architects George B. Ferry and Alfred C. Clas to design a wholesale and retail grocery headquarters on Old World Third Street. The first phase — the entire Highland Avenue facade and three northern bays — is erected in the simplified Romanesque Revival Commercial Style that would define Westown's architectural character.",
+  detail: "The building's heavy masonry, rounded arches, and deep-set windows reflect the structural confidence of a city at the height of its industrial boom. Milwaukee's cream city brick, drawn from the silts of the Milwaukee River, gives the facade its distinctive warm pallor.",
+  image: HISTORICAL_IMG,
+  imageAlt: "Interior of the 1893 Steinmeyer wholesale grocery warehouse"
+},
+{
+  year: "1898",
+  era: "The Expansion",
+  title: "The Southern Addition",
+  description:
+  "Steinmeyer's growing enterprise demands more space. Two additional bays are added to the south along Old World Third Street, seamlessly continuing Ferry & Clas's original design language. The expanded building now occupies the full corner lot, anchoring the intersection of Highland Avenue and Third Street.",
+  detail: "The expansion maintains perfect architectural continuity — the same arched fenestration, cornice line, and masonry detailing — a testament to the original architects' foresight and the building's enduring commercial ambition.",
+  image: PLAQUE_IMG,
+  imageAlt: "The Milwaukee Landmarks Commission bronze plaque on the Steinmeyer Building"
+},
+{
+  year: "1974",
+  era: "The Designation",
+  title: "A Milwaukee Landmark",
+  description:
+  "The City of Milwaukee Landmarks Commission designates the Steinmeyer Building as a Milwaukee Landmark, recognizing its historical and architectural significance to the community. A bronze plaque is erected at the Highland Avenue entrance, permanently inscribing the building's legacy into the city's official record.",
+  detail: "The inscription reads: \"Designed by G. B. Ferry and A. C. Clas, erected in 1893 and later for the wholesale and retail grocery firm founded by William Steinmeyer, and designated as a Milwaukee Landmark in 1974 in recognition of its historical and architectural significance to the community.\"",
+  image: PLAQUE_IMG,
+  imageAlt: "The Steinmeyer Building landmark designation plaque"
+},
+{
+  year: "Today",
+  era: "The Renaissance",
+  title: "Heritage Meets the Modern Workplace",
+  description:
+  "The ground floor has been thoughtfully adapted for retail, while the upper stories have been converted into distinctive office spaces. Original 12-foot ceilings, exposed cream city brick, and massive arched windows now frame contemporary workplaces that honor 130 years of continuous commercial purpose.",
+  detail: "Listed on the National Register of Historic Places as part of the Old World Third Street Historic District, the Steinmeyer Building stands as proof that the best architecture transcends its era. Its next chapter is being written now.",
+  image: MODERN_IMG,
+  imageAlt: "Modern office interior inside the Steinmeyer Building"
+}];
+
 
 function TimelineCard({ event, index }) {
   const ref = useRef(null);
@@ -59,8 +59,8 @@ function TimelineCard({ event, index }) {
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: 0.1 }}
-      className="relative"
-    >
+      className="relative">
+      
       {/* Connector line */}
       <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-[#8E795E]/20" />
 
@@ -95,14 +95,14 @@ function TimelineCard({ event, index }) {
             <img
               src={event.image}
               alt={event.imageAlt}
-              className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-[#8E795E]/0 group-hover:bg-[#8E795E]/10 transition-colors duration-500" />
+              className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" />
+            
+            <div className="absolute inset-0 bg-[#8E795E]/0 group-hover:bg-[#8E795E]/10 transition-colors duration-500 hidden" />
           </div>
         </div>
       </div>
-    </motion.div>
-  );
+    </motion.div>);
+
 }
 
 export default function Timeline() {
@@ -118,8 +118,8 @@ export default function Timeline() {
           initial={{ opacity: 0, y: 40 }}
           animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-20 md:mb-32"
-        >
+          className="mb-20 md:mb-32">
+          
           <div className="flex items-center gap-6 mb-6">
             <div className="h-px flex-1 bg-[#8E795E]/20" />
             <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E]">
@@ -135,11 +135,11 @@ export default function Timeline() {
 
         {/* Timeline entries */}
         <div className="space-y-24 md:space-y-40">
-          {timelineEvents.map((event, i) => (
-            <TimelineCard key={event.year} event={event} index={i} />
-          ))}
+          {timelineEvents.map((event, i) =>
+          <TimelineCard key={event.year} event={event} index={i} />
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
