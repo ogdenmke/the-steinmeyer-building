@@ -13,7 +13,7 @@ export default function Tenants() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-24 md:py-40 bg-[#F5F0E8]">
+    <section id="tenants" className="py-24 md:py-40 bg-[#F5F0E8]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           ref={ref}
