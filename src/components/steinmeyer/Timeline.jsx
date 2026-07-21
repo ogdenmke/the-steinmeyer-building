@@ -95,7 +95,7 @@ function TimelineCard({ event, index }) {
             <img src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/afa112284_generated_23880d89.png"
 
             alt={event.imageAlt}
-            className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105" />
+            className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105 opacity-90" />
             
             <div className="absolute inset-0 bg-[#8E795E]/0 group-hover:bg-[#8E795E]/10 transition-colors duration-500 hidden" />
           </div>
