@@ -54,7 +54,7 @@ export default function Architecture() {
                 <img
                   src={ARCH_IMG}
                   alt="Romanesque arched windows detail on the Steinmeyer Building"
-                  className="w-full aspect-[3/4] object-cover"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
