@@ -3,10 +3,10 @@ import { motion, useInView } from "framer-motion";
 import { Store } from "lucide-react";
 
 const tenants = [
-  { name: "Edelweiss Cruises", description: "Scenic boat tours showcasing Milwaukee from a whole new perspective." },
-  { name: "The Cheese Shop", description: "A Wisconsin classic, serving the city's finest cheese and specialty goods." },
-  { name: "Lucky Clover & RWB", description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy." },
-];
+{ name: "Edelweiss Cruises", description: "Scenic boat tours showcasing Milwaukee from a whole new perspective." },
+{ name: "Wisconsin Cheese Mart", description: "A Wisconsin classic, serving the city's finest cheese and specialty goods." },
+{ name: "Lucky Clover & RWB", description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy." }];
+
 
 export default function Tenants() {
   const ref = useRef(null);
@@ -19,8 +19,8 @@ export default function Tenants() {
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
             Current Tenants
           </span>
@@ -33,8 +33,8 @@ export default function Tenants() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {tenants.map((t) => (
-              <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
+            {tenants.map((t) =>
+            <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
                 <Store size={20} className="text-[#8E795E] mb-4" />
                 <h3 className="font-heading font-semibold text-lg text-[#1A1A1A] mb-2">
                   {t.name}
@@ -43,10 +43,10 @@ export default function Tenants() {
                   {t.description}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
