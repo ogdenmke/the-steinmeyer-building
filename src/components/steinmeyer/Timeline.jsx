@@ -29,7 +29,7 @@ const timelineEvents = [
   description:
   "The City of Milwaukee Landmarks Commission designates the Steinmeyer Building as a Milwaukee Landmark, recognizing its historical and architectural significance to the community. A bronze plaque is erected at the Highland Avenue entrance, permanently inscribing the building's legacy into the city's official record.",
   detail: "The inscription reads: \"Designed by G. B. Ferry and A. C. Clas, erected in 1893 and later for the wholesale and retail grocery firm founded by William Steinmeyer, and designated as a Milwaukee Landmark in 1974 in recognition of its historical and architectural significance to the community.\"",
-  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/PLACEHOLDER_1974_IMAGE.png",
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/f2b8b7053_Steinmeyersign.jpg",
   imageAlt: "The Steinmeyer Building landmark designation plaque"
 },
 {
