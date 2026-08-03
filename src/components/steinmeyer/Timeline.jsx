@@ -1,10 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const HISTORICAL_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/afa112284_generated_23880d89.png";
-const PLAQUE_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/38433e471_generated_f45f5110.png";
-const MODERN_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/fcd02eabd_generated_e5f68f48.png";
-
 const timelineEvents = [
 {
   year: "1893",
@@ -13,7 +9,7 @@ const timelineEvents = [
   description:
   "William Steinmeyer commissions architects George B. Ferry and Alfred C. Clas to design a wholesale and retail grocery headquarters on Old World Third Street. The first phase — the entire Highland Avenue facade and three northern bays — is erected in the simplified Romanesque Revival Commercial Style that would define Westown's architectural character.",
   detail: "The building's heavy masonry, rounded arches, and deep-set windows reflect the structural confidence of a city at the height of its industrial boom. Milwaukee's cream city brick, drawn from the silts of the Milwaukee River, gives the facade its distinctive warm pallor.",
-  image: HISTORICAL_IMG,
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/afa112284_generated_23880d89.png",
   imageAlt: "Interior of the 1893 Steinmeyer wholesale grocery warehouse"
 },
 {
@@ -23,7 +19,7 @@ const timelineEvents = [
   description:
   "Steinmeyer's growing enterprise demands more space. Two additional bays are added to the south along Old World Third Street, seamlessly continuing Ferry & Clas's original design language. The expanded building now occupies the full corner lot, anchoring the intersection of Highland Avenue and Third Street.",
   detail: "The expansion maintains perfect architectural continuity — the same arched fenestration, cornice line, and masonry detailing — a testament to the original architects' foresight and the building's enduring commercial ambition.",
-  image: PLAQUE_IMG,
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/38433e471_generated_f45f5110.png",
   imageAlt: "The Milwaukee Landmarks Commission bronze plaque on the Steinmeyer Building"
 },
 {
@@ -33,7 +29,7 @@ const timelineEvents = [
   description:
   "The City of Milwaukee Landmarks Commission designates the Steinmeyer Building as a Milwaukee Landmark, recognizing its historical and architectural significance to the community. A bronze plaque is erected at the Highland Avenue entrance, permanently inscribing the building's legacy into the city's official record.",
   detail: "The inscription reads: \"Designed by G. B. Ferry and A. C. Clas, erected in 1893 and later for the wholesale and retail grocery firm founded by William Steinmeyer, and designated as a Milwaukee Landmark in 1974 in recognition of its historical and architectural significance to the community.\"",
-  image: PLAQUE_IMG,
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/PLACEHOLDER_1974_IMAGE.png",
   imageAlt: "The Steinmeyer Building landmark designation plaque"
 },
 {
@@ -43,7 +39,7 @@ const timelineEvents = [
   description:
   "The ground floor has been thoughtfully adapted for retail, while the upper stories have been converted into distinctive office spaces. Original 12-foot ceilings, exposed cream city brick, and massive arched windows now frame contemporary workplaces that honor 130 years of continuous commercial purpose.",
   detail: "Listed on the National Register of Historic Places as part of the Old World Third Street Historic District, the Steinmeyer Building stands as proof that the best architecture transcends its era. Its next chapter is being written now.",
-  image: MODERN_IMG,
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/fcd02eabd_generated_e5f68f48.png",
   imageAlt: "Modern office interior inside the Steinmeyer Building"
 }];
 

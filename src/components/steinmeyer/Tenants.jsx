@@ -49,19 +49,21 @@ export default function Tenants() {
           <div className="grid md:grid-cols-3 gap-8">
             {tenants.map((t) =>
               <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
-                <div className="flex items-center gap-3 mb-4">
-                  {t.logos.map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt={`${t.name} logo`}
-                      className="h-14 w-14 object-contain rounded-full bg-white"
-                    />
-                  ))}
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
+                    {t.name}
+                  </h3>
+                  <div className="flex items-center gap-2">
+                    {t.logos.map((src, i) => (
+                      <img
+                        key={i}
+                        src={src}
+                        alt={`${t.name} logo`}
+                        className="h-10 w-10 object-contain rounded-full bg-white"
+                      />
+                    ))}
+                  </div>
                 </div>
-                <h3 className="font-heading font-semibold text-lg text-[#1A1A1A] mb-2">
-                  {t.name}
-                </h3>
                 <p className="font-body text-sm text-[#1A1A1A]/60 leading-[1.7]">
                   {t.description}
                 </p>
