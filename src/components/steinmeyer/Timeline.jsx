@@ -9,7 +9,7 @@ const timelineEvents = [
   description:
   "William Steinmeyer commissions architects George B. Ferry and Alfred C. Clas to design a wholesale and retail grocery headquarters on Old World Third Street. The first phase — the entire Highland Avenue facade and three northern bays — is erected in the simplified Romanesque Revival Commercial Style that would define Westown's architectural character.",
   detail: "The building's heavy masonry, rounded arches, and deep-set windows reflect the structural confidence of a city at the height of its industrial boom. Milwaukee's cream city brick, drawn from the silts of the Milwaukee River, gives the facade its distinctive warm pallor.",
-  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/afa112284_generated_23880d89.png",
+  image: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/f6368be3d_HistoricGroceryStore.jpg",
   imageAlt: "Interior of the 1893 Steinmeyer wholesale grocery warehouse"
 },
 {
