@@ -71,8 +71,8 @@ export default function District() {
             </p>
 
             <div className="mt-10 border-2 border-[#8E795E] p-8 md:p-10 bg-[#8E795E]/10">
-              <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-3">
-                Coming Soon — Right Next Door
+              <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-3">Right Next Door
+
               </span>
               <h3 className="font-heading font-bold text-2xl md:text-3xl text-[#FDFCF8] tracking-tight mb-3">
                 The New Gary Grunua Plaza is Being Built Adjacent to the Building
