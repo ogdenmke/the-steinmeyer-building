@@ -16,14 +16,14 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 0.15 } : {}}
           transition={{ duration: 2 }}
-          className="mb-16 overflow-hidden"
-        >
+          className="mb-16 overflow-hidden">
+          
           <img
             src={ELEVATION_IMG}
             alt="Architectural elevation of the Steinmeyer Building"
             className="w-full object-cover"
-            style={{ filter: "sepia(100%) brightness(1.5)" }}
-          />
+            style={{ filter: "sepia(100%) brightness(1.5)" }} />
+          
         </motion.div>
 
         {/* Footer grid */}
@@ -46,20 +46,20 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {[
-                { label: "History", href: "#history" },
-                { label: "Architecture", href: "#architecture" },
-                { label: "Spaces", href: "#spaces" },
-                { label: "District", href: "#district" },
-                { label: "Leasing", href: "#leasing" },
-              ].map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  className="block font-heading text-sm text-[#FDFCF8]/50 hover:text-[#8E795E] transition-colors"
-                >
+              { label: "History", href: "#history" },
+              { label: "Architecture", href: "#architecture" },
+              { label: "Spaces", href: "#spaces" },
+              { label: "District", href: "#district" },
+              { label: "Leasing", href: "#leasing" }].
+              map((l) =>
+              <a
+                key={l.href}
+                href={l.href}
+                className="block font-heading text-sm text-[#FDFCF8]/50 hover:text-[#8E795E] transition-colors">
+                
                   {l.label}
                 </a>
-              ))}
+              )}
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-3 font-body text-sm text-[#FDFCF8]/50">
-              <p>205 West Highland Avenue</p>
+              <p>1665 N. Water St.</p>
               <p>Milwaukee, WI 53203</p>
               <a href="tel:+14147197899" className="block hover:text-[#8E795E] transition-colors">
                 (414) 719-7899
@@ -110,6 +110,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 }
