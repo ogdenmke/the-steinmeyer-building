@@ -81,6 +81,24 @@ export default function AvailableSpace() {
             <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg leading-[1.7]">
               9 suites available · 1,388 – 13,608 SF · $16.00/SF Gross
             </p>
+
+            {/* Subdivision callout */}
+            <div className="mt-8 border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10 max-w-3xl">
+              <div className="flex items-start gap-4">
+                <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
+                  +
+                </span>
+                <div>
+                  <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
+                    Subdivision Is Possible
+                  </h3>
+                  <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
+                    Floors can be leased in full or subdivided into smaller suites to precisely
+                    fit your space needs — from a single suite to an entire floor.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Floor groups */}
