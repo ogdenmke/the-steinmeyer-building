@@ -5,16 +5,16 @@ const ARCH_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ec
 const ELEVATION_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/09e5accff_generated_dcf36b06.png";
 
 const specs = [
-  { label: "Architects", value: "G. B. Ferry & A. C. Clas" },
-  { label: "Style", value: "Romanesque Revival Commercial" },
-  { label: "Erected", value: "1893 / Expanded 1898" },
-  { label: "Material", value: "Milwaukee Cream City Brick" },
-  { label: "Stories", value: "Four" },
-  { label: "Landmark Status", value: "1974, City of Milwaukee" },
-  { label: "National Register", value: "Old World 3rd St. Historic District" },
-  { label: "Location", value: "205 W. Highland Ave, Milwaukee" },
-  { label: "Subdivision", value: "Full floors or subdivided suites available" },
-];
+{ label: "Architects", value: "G. B. Ferry & A. C. Clas" },
+{ label: "Style", value: "Romanesque Revival Commercial" },
+{ label: "Erected", value: "1893 / Expanded 1898" },
+{ label: "Material", value: "Milwaukee Cream City Brick" },
+{ label: "Stories", value: "Four" },
+{ label: "Landmark Status", value: "1974, City of Milwaukee" },
+{ label: "National Register", value: "Old World 3rd St. Historic District" },
+{ label: "Location", value: "205 W. Highland Ave, Milwaukee" },
+{ label: "Subdivision", value: "Full floors or subdivided suites available" }];
+
 
 export default function Architecture() {
   const ref = useRef(null);
@@ -27,8 +27,8 @@ export default function Architecture() {
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           {/* Header */}
           <div className="mb-16 md:mb-24">
             <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
@@ -54,8 +54,8 @@ export default function Architecture() {
                 <img
                   src={ARCH_IMG}
                   alt="Romanesque arched windows detail on the Steinmeyer Building"
-                  className="w-full h-auto object-contain"
-                />
+                  className="w-full h-auto object-contain" />
+                
               </div>
             </div>
 
@@ -66,11 +66,11 @@ export default function Architecture() {
                   Building Specifications
                 </h3>
                 <div className="space-y-0">
-                  {specs.map((s, i) => (
-                    <div
-                      key={s.label}
-                      className="flex justify-between items-baseline py-3.5 border-b border-[#8E795E]/10 last:border-0"
-                    >
+                  {specs.map((s, i) =>
+                  <div
+                    key={s.label}
+                    className="flex justify-between items-baseline py-3.5 border-b border-[#8E795E]/10 last:border-0">
+                    
                       <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50">
                         {s.label}
                       </span>
@@ -78,11 +78,11 @@ export default function Architecture() {
                         {s.value}
                       </span>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
 
-              <div className="mt-6 border-2 border-[#8E795E] p-6 bg-[#8E795E]/10">
+              <div className="mt-6 border-2 border-[#8E795E] p-6 bg-[#8E795E]/10 hidden">
                 <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-2">
                   Flexible Floor Plans
                 </span>
@@ -103,8 +103,8 @@ export default function Architecture() {
               <img
                 src={ELEVATION_IMG}
                 alt="Architectural elevation drawing of the Steinmeyer Building in the style of 19th century blueprints"
-                className="w-full object-cover opacity-90"
-              />
+                className="w-full object-cover opacity-90" />
+              
             </div>
           </div>
 
@@ -122,6 +122,6 @@ export default function Architecture() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
