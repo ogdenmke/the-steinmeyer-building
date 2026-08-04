@@ -70,14 +70,23 @@ export default function Footer() {
             <div className="space-y-3 font-body text-sm text-[#FDFCF8]/50">
               <p>205 West Highland Avenue</p>
               <p>Milwaukee, WI 53203</p>
-              <a href="tel:+14142701351" className="block hover:text-[#8E795E] transition-colors">
-                (414) 270-1351
+              <a href="tel:+14147197899" className="block hover:text-[#8E795E] transition-colors">
+                (414) 719-7899
               </a>
               <a href="mailto:richardr@ogdenre.com" className="block hover:text-[#8E795E] transition-colors">
                 richardr@ogdenre.com
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Disclaimer */}
+        <div className="mb-10 pt-8 border-t border-[#FDFCF8]/10">
+          <p className="font-body text-xs text-[#FDFCF8]/30 leading-[1.7] max-w-3xl">
+            The information furnished regarding this property is from sources deemed reliable,
+            but no warranty or representation is made to the accuracy thereof and is subject to
+            errors, omissions, changes of price or other conditions or withdrawal without notice.
+          </p>
         </div>
 
         {/* Bottom bar */}

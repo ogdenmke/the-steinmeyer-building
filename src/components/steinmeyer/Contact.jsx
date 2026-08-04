@@ -27,44 +27,43 @@ export default function Contact() {
                 Secure Your Place<br />in History
               </h2>
               <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg leading-[1.7] mb-12">
-                Whether you're seeking a distinguished office address, a character-rich retail 
-                space, or a creative studio wrapped in 130 years of Milwaukee heritage — 
+                Whether you're seeking a distinguished office address, a character-rich retail
+                space, or a creative studio wrapped in 130 years of Milwaukee heritage —
                 the Steinmeyer Building has a space that matches your ambition.
               </p>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <MapPin size={18} className="text-[#8E795E] mt-1 shrink-0" />
-                  <div>
-                    <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
-                      Address
-                    </span>
-                    <p className="font-body text-[#1A1A1A]">
-                      205 West Highland Avenue<br />Milwaukee, WI 53203
-                    </p>
-                  </div>
+              {/* Broker contact block */}
+              <div className="border-l-2 border-[#8E795E] pl-6 mb-10">
+                <p className="font-heading font-bold text-lg text-[#1A1A1A] mb-1">
+                  Richard Reinders
+                </p>
+                <p className="font-heading text-xs tracking-[0.15em] uppercase text-[#8E795E] mb-4">
+                  Commercial Brokerage Associate
+                </p>
+                <div className="space-y-2">
+                  <a href="tel:+14147197899" className="flex items-center gap-3 font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
+                    <Phone size={16} className="text-[#8E795E] shrink-0" />
+                    (414) 719-7899
+                  </a>
+                  <a href="mailto:richardr@ogdenre.com" className="flex items-center gap-3 font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors break-all">
+                    <Mail size={16} className="text-[#8E795E] shrink-0" />
+                    richardr@ogdenre.com
+                  </a>
                 </div>
-                <div className="flex items-start gap-4">
-                  <Phone size={18} className="text-[#8E795E] mt-1 shrink-0" />
-                  <div>
-                    <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
-                      Leasing Office
-                    </span>
-                    <a href="tel:+14142701351" className="font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
-                      (414) 270-1351
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Mail size={18} className="text-[#8E795E] mt-1 shrink-0" />
-                  <div>
-                    <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
-                      Email
-                    </span>
-                    <a href="mailto:richardr@ogdenre.com" className="font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
-                      richardr@ogdenre.com
-                    </a>
-                  </div>
+                <p className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 mt-4">
+                  Ogden &amp; Company, Inc., AMO®
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <MapPin size={18} className="text-[#8E795E] mt-1 shrink-0" />
+                <div>
+                  <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 block mb-1">
+                    Address
+                  </span>
+                  <p className="font-body text-[#1A1A1A]">
+                    205 West Highland Avenue<br />Milwaukee, WI 53203
+                  </p>
                 </div>
               </div>
             </div>
@@ -76,8 +75,8 @@ export default function Contact() {
                 Browse & Inquire
               </h3>
               <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg leading-[1.7] mb-10">
-                For the most up-to-date availability, floor plans, and pricing, please visit 
-                our live listings page. From there you can request a tour or reach out to our 
+                For the most up-to-date availability, floor plans, and pricing, please visit
+                our live listings page. From there you can request a tour or reach out to our
                 leasing broker directly.
               </p>
               <a
@@ -94,9 +93,9 @@ export default function Contact() {
                   Prefer to reach us directly?
                 </p>
                 <div className="space-y-3">
-                  <a href="tel:+14142701351" className="flex items-center gap-3 font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
+                  <a href="tel:+14147197899" className="flex items-center gap-3 font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors">
                     <Phone size={16} className="text-[#8E795E]" />
-                    (414) 270-1351
+                    (414) 719-7899
                   </a>
                   <a href="mailto:richardr@ogdenre.com" className="flex items-center gap-3 font-body text-[#1A1A1A] hover:text-[#8E795E] transition-colors break-all">
                     <Mail size={16} className="text-[#8E795E] shrink-0" />
