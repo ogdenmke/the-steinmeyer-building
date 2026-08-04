@@ -82,15 +82,15 @@ export default function Architecture() {
                 </div>
               </div>
 
-              <div className="mt-6 border-2 border-[#8E795E] p-6 bg-[#8E795E]/10 hidden">
-                <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-2">
-                  Flexible Floor Plans
-                </span>
-                <p className="font-body text-sm text-[#1A1A1A]/80 leading-[1.7]">
-                  <strong>Subdivision is possible</strong> — floors can be leased in full or 
-                  divided into smaller suites to precisely fit your space needs.
-                </p>
-              </div>
+              
+
+
+
+
+
+
+
+              
             </div>
           </div>
 
