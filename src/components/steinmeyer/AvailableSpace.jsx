@@ -43,8 +43,8 @@ function SuiteCard({ suite }) {
           <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-1">
             Suite {suite.suite}
           </span>
-          <span className="font-heading font-black text-2xl text-[#1A1A1A]">
-            {suite.sf.toLocaleString()} <span className="text-base font-normal text-[#1A1A1A]/50">SF</span>
+          <span className="font-heading font-black text-2xl text-[#1A1A1A] whitespace-nowrap">
+            {suite.sf.toLocaleString()}<span className="text-base font-normal text-[#1A1A1A]/50 ml-1">SF</span>
           </span>
         </div>
         {suite.turnKey && (
