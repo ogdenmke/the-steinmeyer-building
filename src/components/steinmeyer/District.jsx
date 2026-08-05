@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin } from "lucide-react";
 
-const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ac0fed68d_generated_df4b2f7a.png";
+const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/f97bfba15_RiversidePlaza.png";
 
 const landmarks = [
 { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks, Marquette University, and the city's premier downtown arena district" },
@@ -89,8 +89,8 @@ export default function District() {
           <div className="mb-16 overflow-hidden">
             <img
               src={DISTRICT_IMG}
-              alt="Aerial view of Milwaukee's Westown neighborhood and Old World Third Street"
-              className="w-full aspect-[21/9] object-cover opacity-80" />
+              alt="Rendering of the new Gary Grunau Plaza adjacent to the Steinmeyer Building"
+              className="w-full aspect-[21/9] object-cover opacity-90" />
             
           </div>
 

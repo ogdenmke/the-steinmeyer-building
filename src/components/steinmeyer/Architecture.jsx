@@ -21,7 +21,7 @@ export default function Architecture() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="architecture" className="py-24 md:py-40 bg-[#F5F0E8]">
+    <section id="architecture" className="pt-12 md:pt-16 pb-24 md:pb-40 bg-[#F5F0E8]">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           ref={ref}
