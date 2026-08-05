@@ -87,38 +87,39 @@ export default function AvailableSpace() {
               9 suites available · 1,388 – 13,608 SF · $16.00/SF Gross
             </p>
 
-            {/* Subdivision callout */}
-            <div className="mt-8 border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10 max-w-3xl">
-              <div className="flex items-start gap-4">
-                <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
-                  +
-                </span>
-                <div>
-                  <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
-                    Subdivision Is Possible
-                  </h3>
-                  <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
-                    Floors can be leased in full or subdivided into smaller suites to precisely
-                    fit your space needs — from a single suite to an entire floor.
-                  </p>
+            {/* Callouts side by side */}
+            <div className="mt-8 grid md:grid-cols-2 gap-6 max-w-4xl">
+              <div className="border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10">
+                <div className="flex items-start gap-4">
+                  <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
+                    +
+                  </span>
+                  <div>
+                    <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
+                      Subdivision Is Possible
+                    </h3>
+                    <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
+                      Floors can be leased in full or subdivided into smaller suites to precisely
+                      fit your space needs — from a single suite to an entire floor.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Individual office space callout */}
-            <div className="mt-6 border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10 max-w-3xl">
-              <div className="flex items-start gap-4">
-                <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
-                  +
-                </span>
-                <div>
-                  <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
-                    Individual Office Space Is Available
-                  </h3>
-                  <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
-                    Prefer a single private office? Individual offices within select suites
-                    are available to lease — ideal for solo professionals and small teams.
-                  </p>
+              <div className="border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10">
+                <div className="flex items-start gap-4">
+                  <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
+                    +
+                  </span>
+                  <div>
+                    <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
+                      Individual Office Space Is Available
+                    </h3>
+                    <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
+                      Prefer a single private office? Individual offices within select suites
+                      are available to lease — ideal for solo professionals and small teams.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
