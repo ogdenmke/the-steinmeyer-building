@@ -74,7 +74,7 @@ export default function District() {
               <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-3">Right Next Door
 
               </span>
-              <h3 className="font-heading font-bold text-2xl md:text-3xl text-[#FDFCF8] tracking-tight mb-3">The New Gary Gruna Plaza is Being Built Adjacent to the Building
+              <h3 className="font-heading font-bold text-2xl md:text-3xl text-[#FDFCF8] tracking-tight mb-3">The New Gary Grunau Plaza is Being Built Adjacent to the Building
 
               </h3>
               <p className="font-body text-[#FDFCF8]/70 text-base md:text-lg leading-[1.7]">
