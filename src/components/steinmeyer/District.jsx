@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin } from "lucide-react";
 
-const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/9462f3529_1767220579499.jpg";
+const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/10b375cd9_plaza_proposed_1344x768.png";
 
 const landmarks = [
 { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks, Marquette University, and the city's premier downtown arena district" },
