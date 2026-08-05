@@ -59,7 +59,7 @@ export default function Tenants() {
                         key={i}
                         src={src}
                         alt={`${t.name} logo`}
-                        className="h-10 w-10 object-contain rounded-full bg-white"
+                        className="h-16 w-16 object-contain rounded-full bg-white p-1"
                       />
                     ))}
                   </div>

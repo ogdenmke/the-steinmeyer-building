@@ -10,27 +10,27 @@ const floors = [
     floor: 3,
     contiguous: null,
     suites: [
-      { suite: "306", sf: 3289, turnKey: false },
+      { suite: "306", sf: 3289, turnKey: false, view: "Views of Deer District" },
     ],
   },
   {
     floor: 4,
     contiguous: 13608,
     suites: [
-      { suite: "400", sf: 4446, turnKey: true },
-      { suite: "401", sf: 2768, turnKey: false },
-      { suite: "402", sf: 4530, turnKey: true },
-      { suite: "403", sf: 1864, turnKey: false },
+      { suite: "400", sf: 4446, turnKey: true, view: "Views of the Milwaukee River" },
+      { suite: "401", sf: 2768, turnKey: false, view: "Views of Deer District" },
+      { suite: "402", sf: 4530, turnKey: true, view: "Views of Deer District" },
+      { suite: "403", sf: 1864, turnKey: false, view: "Views of Deer District" },
     ],
   },
   {
     floor: 5,
     contiguous: 13498,
     suites: [
-      { suite: "500", sf: 6360, turnKey: false },
-      { suite: "502", sf: 1388, turnKey: true },
-      { suite: "504", sf: 2358, turnKey: false },
-      { suite: "509", sf: 3392, turnKey: true },
+      { suite: "500", sf: 6360, turnKey: false, view: "Views of Deer District & Milwaukee River" },
+      { suite: "502", sf: 1388, turnKey: true, view: "Views of the Milwaukee River" },
+      { suite: "504", sf: 2358, turnKey: false, view: "Views of the Milwaukee River" },
+      { suite: "509", sf: 3392, turnKey: true, view: "Views of Deer District" },
     ],
   },
 ];
@@ -53,6 +53,11 @@ function SuiteCard({ suite }) {
           </span>
         )}
       </div>
+      {suite.view && (
+        <p className="mt-4 pt-4 border-t border-[#8E795E]/15 font-body text-xs text-[#1A1A1A]/60 italic leading-[1.5]">
+          {suite.view}
+        </p>
+      )}
     </div>
   );
 }
@@ -95,6 +100,24 @@ export default function AvailableSpace() {
                   <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
                     Floors can be leased in full or subdivided into smaller suites to precisely
                     fit your space needs — from a single suite to an entire floor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Individual office space callout */}
+            <div className="mt-6 border-2 border-[#8E795E] p-6 md:p-8 bg-[#8E795E]/10 max-w-3xl">
+              <div className="flex items-start gap-4">
+                <span className="font-heading font-black text-2xl md:text-3xl text-[#8E795E] leading-none">
+                  +
+                </span>
+                <div>
+                  <h3 className="font-heading font-bold text-base md:text-lg text-[#1A1A1A] tracking-tight mb-2">
+                    Individual Office Space Is Available
+                  </h3>
+                  <p className="font-body text-sm md:text-base text-[#1A1A1A]/80 leading-[1.7]">
+                    Prefer a single private office? Individual offices within select suites
+                    are available to lease — ideal for solo professionals and small teams.
                   </p>
                 </div>
               </div>
