@@ -9,7 +9,7 @@ const terms = [
 { label: "HVAC", value: "Forced air" },
 { label: "Zoning", value: "C9G – Mixed Activity" },
 { label: "Signage", value: "Lobby and interior signage available; facade signage negotiable" },
-{ label: "Parking", value: "Parking available within 1\u20132 blocks of the building" }];
+{ label: "Parking", value: "Parking available within 1\u20132 blocks of building" }];
 
 
 export default function LeaseTerms() {
