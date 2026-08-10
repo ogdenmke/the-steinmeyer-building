@@ -51,7 +51,7 @@ export default function Tenants() {
             <img
               src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/3eb2c51a4_IMG_8193.jpg"
               alt="Wisconsin Cheese Mart storefront on the ground floor of the Steinmeyer Building"
-              className="w-full h-[320px] md:h-[420px] object-cover px-5" />
+              className="w-full h-[320px] md:h-[420px] object-cover px-32" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
