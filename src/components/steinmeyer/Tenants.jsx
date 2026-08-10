@@ -2,25 +2,25 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const tenants = [
-  {
-    name: "Edelweiss Cruises",
-    description: "Scenic boat tours showcasing Milwaukee from a whole new perspective.",
-    logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/36fc535dc_Edelweiss_Logo.jpeg"],
-  },
-  {
-    name: "Wisconsin Cheese Mart",
-    description: "A Wisconsin classic, serving the city's finest cheese and specialty goods.",
-    logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/03b3442db_WisconsinCheeseMart.png"],
-  },
-  {
-    name: "Lucky Clover & RWB",
-    description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy.",
-    logos: [
-      "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/908c35b3d_LuckyClover.jpg",
-      "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/d7730ca00_RWB_Logo.png",
-    ],
-  },
-];
+{
+  name: "Edelweiss Cruises",
+  description: "Scenic boat tours showcasing Milwaukee from a whole new perspective.",
+  logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/36fc535dc_Edelweiss_Logo.jpeg"]
+},
+{
+  name: "Wisconsin Cheese Mart",
+  description: "A Wisconsin classic, serving the city's finest cheese and specialty goods.",
+  logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/03b3442db_WisconsinCheeseMart.png"]
+},
+{
+  name: "Lucky Clover & RWB",
+  description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy.",
+  logos: [
+  "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/908c35b3d_LuckyClover.jpg",
+  "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/d7730ca00_RWB_Logo.png"]
+
+}];
+
 
 export default function Tenants() {
   const ref = useRef(null);
@@ -51,25 +51,25 @@ export default function Tenants() {
             <img
               src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/3eb2c51a4_IMG_8193.jpg"
               alt="Wisconsin Cheese Mart storefront on the ground floor of the Steinmeyer Building"
-              className="w-full h-[320px] md:h-[420px] object-cover" />
+              className="w-full h-[320px] md:h-[420px] object-cover px-5" />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {tenants.map((t) =>
-              <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
+            <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
                     {t.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    {t.logos.map((src, i) => (
-                      <img
-                        key={i}
-                        src={src}
-                        alt={`${t.name} logo`}
-                        className="h-16 w-16 object-contain rounded-full bg-white p-1"
-                      />
-                    ))}
+                    {t.logos.map((src, i) =>
+                  <img
+                    key={i}
+                    src={src}
+                    alt={`${t.name} logo`}
+                    className="h-16 w-16 object-contain rounded-full bg-white p-1" />
+
+                  )}
                   </div>
                 </div>
                 <p className="font-body text-sm text-[#1A1A1A]/60 leading-[1.7]">
@@ -80,6 +80,6 @@ export default function Tenants() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
