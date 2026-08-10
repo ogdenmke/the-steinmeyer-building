@@ -70,14 +70,6 @@ export default function District() {
 
             </p>
 
-            {/* Riverfront context photo */}
-            <div className="mt-12 mb-12 overflow-hidden">
-              <img
-                src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/116dc5cc5_IMG_8191.jpg"
-                alt="The Steinmeyer Building along the Milwaukee River, with the Edelweiss Cruises boat and Old World Third Street context"
-                className="w-full h-[300px] md:h-[440px] object-cover opacity-90" />
-            </div>
-
             <div className="mt-10 border-2 border-[#8E795E] p-8 md:p-10 bg-[#8E795E]/10">
               <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-3">Right Next Door
 

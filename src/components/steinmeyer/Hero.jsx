@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
-const HERO_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/90061e3a8_IMG_8198.jpg";
+const HERO_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/04aec8da0_SteinmeyerBuildingPic.jpg";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
-          alt="The Steinmeyer Building facade with carved inscription and string lights, Milwaukee"
+          alt="The Steinmeyer Building facade at golden hour, Milwaukee"
           className="w-full h-full object-cover" />
         
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A1A1A]/40 via-[#1A1A1A]/25 to-[#1A1A1A]/70" />
