@@ -6,13 +6,13 @@ const businesses = [
     name: "Usinger's Famous Sausage",
     description:
       "A Milwaukee institution since 1880, crafting legendary sausages just steps from the Steinmeyer Building.",
-    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/7eec43148_ChatGPTImageAug10202609_10_34AM.png",
+    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ed141aa7a_usingers_white_background.png",
   },
   {
     name: "Mader's Restaurant",
     description:
       "Milwaukee's iconic German restaurant since 1902, serving award-winning Bavarian cuisine on Old World Third Street.",
-    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/3642c8a58_ChatGPTImageAug10202609_14_44AM.png",
+    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/5b2a0f1e9_maders_white_background.png",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function LocalBusiness() {
                   <img
                     src={b.logo}
                     alt={`${b.name} logo`}
-                    className="h-20 w-20 object-contain rounded-lg bg-black p-1.5"
+                    className="h-16 w-16 object-contain rounded-full bg-white p-1"
                   />
                   <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
                     {b.name}
