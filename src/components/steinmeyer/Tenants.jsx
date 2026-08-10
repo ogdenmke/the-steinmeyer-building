@@ -41,10 +41,18 @@ export default function Tenants() {
           <h2 className="font-heading font-black text-4xl md:text-6xl text-[#1A1A1A] tracking-tight mb-6">
             A Living<br />Ground Floor
           </h2>
-          <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg max-w-2xl leading-[1.7] mb-16">
+          <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg max-w-2xl leading-[1.7] mb-12">
             The Steinmeyer Building is already home to a thriving mix of local businesses
             bringing daily foot traffic and character to the block.
           </p>
+
+          {/* Streetscape image */}
+          <div className="mb-16 overflow-hidden">
+            <img
+              src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/3eb2c51a4_IMG_8193.jpg"
+              alt="Wisconsin Cheese Mart storefront on the ground floor of the Steinmeyer Building"
+              className="w-full h-[320px] md:h-[420px] object-cover" />
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {tenants.map((t) =>

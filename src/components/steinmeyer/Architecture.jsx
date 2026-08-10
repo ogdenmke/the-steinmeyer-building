@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const ARCH_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ea97e4c56_IMG_8198.jpg";
+const ARCH_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/a89ffb0d1_IMG_8195.jpg";
+const LOBBY_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/3a1459150_Lobby1.jpg";
 const ELEVATION_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/09e5accff_generated_dcf36b06.png";
 
 const specs = [
@@ -91,6 +92,26 @@ export default function Architecture() {
 
 
               
+            </div>
+          </div>
+
+          {/* Interior / lobby detail */}
+          <div className="mt-16 md:mt-24 grid md:grid-cols-2 gap-8">
+            <div className="overflow-hidden">
+              <img
+                src={LOBBY_IMG}
+                alt="Interior lobby wall with the original Steinmeyer Mercantile 1893 sign"
+                className="w-full h-full object-cover" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="font-heading text-[10px] tracking-[0.3em] uppercase text-[#8E795E] block mb-3">
+                Original Interior Character
+              </span>
+              <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg leading-[1.7]">
+                The building's interior retains its historic mercantile soul — exposed brick walls,
+                the original "Steinmeyer Mercantile 1893" iron sign, and timber beams that recall
+                its days as a wholesale grocery house.
+              </p>
             </div>
           </div>
 
