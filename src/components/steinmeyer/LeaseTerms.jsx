@@ -2,15 +2,15 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const terms = [
-  { label: "Lease Rate", value: "$16.00/SF Gross" },
-  { label: "Lease Type", value: "Full-service gross, landlord responsible for utilities" },
-  { label: "Building", value: "5 stories, 76,904 SF RBA, built 1893" },
-  { label: "Construction", value: "Masonry" },
-  { label: "HVAC", value: "Forced air" },
-  { label: "Zoning", value: "C9G – Mixed Activity" },
-  { label: "Signage", value: "Lobby and interior signage available; facade signage negotiable" },
-  { label: "Parking", value: "Multiple parking lots located within 1–2 blocks of the building" },
-];
+{ label: "Lease Rate", value: "$16.00/SF Gross" },
+{ label: "Lease Type", value: "Full-service gross, landlord responsible for utilities" },
+{ label: "Building", value: "5 stories, 76,904 SF RBA, built 1893" },
+{ label: "Construction", value: "Masonry" },
+{ label: "HVAC", value: "Forced air" },
+{ label: "Zoning", value: "C9G – Mixed Activity" },
+{ label: "Signage", value: "Lobby and interior signage available; facade signage negotiable" },
+{ label: "Parking", value: "Parking available within 1\u20132 blocks of the building" }];
+
 
 export default function LeaseTerms() {
   const ref = useRef(null);
@@ -23,8 +23,8 @@ export default function LeaseTerms() {
           ref={ref}
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+          
           <div className="mb-12">
             <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
               The Particulars
@@ -37,8 +37,8 @@ export default function LeaseTerms() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="border border-[#8E795E]/20 p-8 md:p-10">
               <div className="space-y-0">
-                {terms.map((t) => (
-                  <div key={t.label} className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 py-4 border-b border-[#8E795E]/10 last:border-0">
+                {terms.map((t) =>
+                <div key={t.label} className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 py-4 border-b border-[#8E795E]/10 last:border-0">
                     <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 md:w-40 shrink-0">
                       {t.label}
                     </span>
@@ -46,7 +46,7 @@ export default function LeaseTerms() {
                       {t.value}
                     </span>
                   </div>
-                ))}
+                )}
               </div>
             </div>
             <div className="flex flex-col justify-center">
@@ -62,6 +62,6 @@ export default function LeaseTerms() {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
