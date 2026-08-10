@@ -47,7 +47,7 @@ export default function LocalBusiness() {
                   <img
                     src={b.logo}
                     alt={`${b.name} logo`}
-                    className="h-16 w-16 object-contain rounded-full bg-white p-1"
+                    className="h-16 w-16 object-contain rounded-full bg-[#FDFCF8] p-1"
                   />
                   <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
                     {b.name}
