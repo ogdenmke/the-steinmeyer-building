@@ -4,6 +4,7 @@ import Hero from "@/components/steinmeyer/Hero";
 import AvailableSpace from "@/components/steinmeyer/AvailableSpace";
 import LeaseTerms from "@/components/steinmeyer/LeaseTerms";
 import Tenants from "@/components/steinmeyer/Tenants";
+import LocalBusiness from "@/components/steinmeyer/LocalBusiness";
 import Architecture from "@/components/steinmeyer/Architecture";
 import District from "@/components/steinmeyer/District";
 import Timeline from "@/components/steinmeyer/Timeline";
@@ -18,6 +19,7 @@ export default function Home() {
       <AvailableSpace />
       <LeaseTerms />
       <Tenants />
+      <LocalBusiness />
       <Architecture />
       <District />
       <Timeline />
