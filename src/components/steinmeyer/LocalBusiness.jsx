@@ -43,15 +43,15 @@ export default function LocalBusiness() {
           <div className="grid md:grid-cols-2 gap-8">
             {businesses.map((b) => (
               <div key={b.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
+                    {b.name}
+                  </h3>
                   <img
                     src={b.logo}
                     alt={`${b.name} logo`}
                     className="h-16 w-16 object-contain rounded-full bg-[#FDFCF8] p-1"
                   />
-                  <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
-                    {b.name}
-                  </h3>
                 </div>
                 <p className="font-body text-sm text-[#1A1A1A]/60 leading-[1.7]">
                   {b.description}
