@@ -11,7 +11,6 @@ const tenants = [
     name: "Wisconsin Cheese Mart",
     description: "A Wisconsin classic, serving the city's finest cheese and specialty goods.",
     logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/03b3442db_WisconsinCheeseMart.png"],
-    photo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/095ed6b0e_IMG_8193.JPG",
   },
   {
     name: "Lucky Clover & RWB",
@@ -36,29 +35,31 @@ export default function Tenants() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}>
 
-          <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
-            Current Tenants
-          </span>
-          <h2 className="font-heading font-black text-4xl md:text-6xl text-[#1A1A1A] tracking-tight mb-6">
-            A Living<br />Ground Floor
-          </h2>
-          <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg max-w-2xl leading-[1.7] mb-16">
-            The Steinmeyer Building is already home to a thriving mix of local businesses
-            bringing daily foot traffic and character to the block.
-          </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
+                Current Tenants
+              </span>
+              <h2 className="font-heading font-black text-4xl md:text-6xl text-[#1A1A1A] tracking-tight mb-6">
+                A Living<br />Ground Floor
+              </h2>
+              <p className="font-body text-[#1A1A1A]/70 text-base md:text-lg max-w-xl leading-[1.7]">
+                The Steinmeyer Building is already home to a thriving mix of local businesses
+                bringing daily foot traffic and character to the block.
+              </p>
+            </div>
+            <div className="overflow-hidden">
+              <img
+                src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/095ed6b0e_IMG_8193.JPG"
+                alt="Wisconsin Cheese Mart storefront in the Steinmeyer Building"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {tenants.map((t) =>
               <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
-                {t.photo && (
-                  <div className="mb-6 overflow-hidden">
-                    <img
-                      src={t.photo}
-                      alt={`${t.name} storefront`}
-                      className="w-full h-48 object-cover"
-                    />
-                  </div>
-                )}
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
                     {t.name}
