@@ -11,6 +11,7 @@ const tenants = [
     name: "Wisconsin Cheese Mart",
     description: "A Wisconsin classic, serving the city's finest cheese and specialty goods.",
     logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/03b3442db_WisconsinCheeseMart.png"],
+    photo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/095ed6b0e_IMG_8193.JPG",
   },
   {
     name: "Lucky Clover & RWB",
@@ -49,6 +50,15 @@ export default function Tenants() {
           <div className="grid md:grid-cols-3 gap-8">
             {tenants.map((t) =>
               <div key={t.name} className="border border-[#8E795E]/20 p-8 bg-[#FDFCF8]">
+                {t.photo && (
+                  <div className="mb-6 overflow-hidden">
+                    <img
+                      src={t.photo}
+                      alt={`${t.name} storefront`}
+                      className="w-full h-48 object-cover"
+                    />
+                  </div>
+                )}
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="font-heading font-semibold text-lg text-[#1A1A1A]">
                     {t.name}
