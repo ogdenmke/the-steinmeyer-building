@@ -3,9 +3,7 @@ import { motion, useInView } from "framer-motion";
 import historicGroceryStoreImg from "@/assets/images/timeline-grocery-store.jpg";
 import historicBuildingImg from "@/assets/images/timeline-historic-building.jpg";
 import signImg from "@/assets/images/timeline-sign.jpg";
-
-// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
-const KITCHEN_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/1579f5bed_400Kitchen.jpg";
+import KITCHEN_IMG from "@/assets/images/timeline-400-kitchen.jpg";
 
 const timelineEvents = [
 {
