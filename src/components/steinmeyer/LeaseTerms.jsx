@@ -25,7 +25,24 @@ export default function LeaseTerms() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}>
           
-          <div className="grid lg:grid-cols-5 gap-12 md:gap-16 items-center">
+          {/* Header */}
+          <div className="mb-16 md:mb-24">
+            <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
+              The Particulars
+            </span>
+            <h2 className="font-heading font-black text-4xl md:text-6xl text-[#1A1A1A] tracking-tight mb-6">
+              Lease Terms &<br />Building Details
+            </h2>
+            <p className="font-body text-[#1A1A1A]/70 text-lg md:text-xl max-w-2xl leading-[1.7]">
+              Full-service gross leasing means the landlord handles utilities and building
+              operations — your monthly cost is predictable from day one. At $16.00/SF, the
+              Steinmeyer Building offers downtown Milwaukee's most competitive value for
+              character-rich, historic office space.
+            </p>
+          </div>
+
+          {/* Grid: image + terms */}
+          <div className="grid lg:grid-cols-5 gap-12 md:gap-16">
             {/* Building detail image */}
             <div className="lg:col-span-3">
               <div className="overflow-hidden arch-radius-subtle">
@@ -36,39 +53,24 @@ export default function LeaseTerms() {
               </div>
             </div>
 
-            {/* Terms + description */}
-            <div className="lg:col-span-2">
-              <div className="mb-12">
-                <span className="font-heading text-[10px] tracking-[0.4em] uppercase text-[#8E795E] block mb-4">
-                  The Particulars
-                </span>
-                <h2 className="font-heading font-black text-3xl md:text-4xl text-[#1A1A1A] tracking-tight">
-                  Lease Terms & Building Details
-                </h2>
-              </div>
-
-              <div className="border border-[#8E795E]/20 p-8">
+            {/* Terms box */}
+            <div className="lg:col-span-2 flex flex-col justify-center">
+              <div className="border border-[#8E795E]/20 p-8 md:p-10">
+                <h3 className="font-heading font-bold text-xs tracking-[0.3em] uppercase text-[#8E795E] mb-8">
+                  Lease Specifications
+                </h3>
                 <div className="space-y-0">
                   {terms.map((t) =>
-                  <div key={t.label} className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 py-4 border-b border-[#8E795E]/10 last:border-0">
-                      <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 md:w-32 shrink-0">
+                  <div key={t.label} className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-6 py-3.5 border-b border-[#8E795E]/10 last:border-0">
+                      <span className="font-heading text-xs tracking-[0.1em] uppercase text-[#1A1A1A]/50 md:w-28 shrink-0">
                         {t.label}
                       </span>
-                      <span className="font-body text-sm md:text-base text-[#1A1A1A]">
+                      <span className="font-body text-sm text-[#1A1A1A]">
                         {t.value}
                       </span>
                     </div>
                   )}
                 </div>
-              </div>
-
-              <div className="mt-8 border-l-2 border-[#8E795E] pl-8">
-                <p className="font-body text-base md:text-lg text-[#1A1A1A]/80 leading-[1.8]">
-                  Full-service gross leasing means the landlord handles utilities and
-                  building operations — your monthly cost is predictable from day one.
-                  At $16.00/SF, the Steinmeyer Building offers downtown Milwaukee's
-                  most competitive value for character-rich, historic office space.
-                </p>
               </div>
             </div>
           </div>
