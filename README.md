@@ -39,4 +39,4 @@ The site will be published at `https://<your-github-username>.github.io/<repo-na
 
 - `src/pages/Home.jsx` — the page, composed from the section components in `src/components/steinmeyer/`.
 - `src/components/ui/` — shared UI primitives (shadcn/ui style, built on Radix).
-- `vite.config.js` — Vite config; `base: './'` keeps built asset paths relative so the site works both under a GitHub Pages project path and at a custom domain root.
+- `vite.config.js` — Vite config; `base` is set to the GitHub Pages project path (`/the-steinmeyer-building/`) and is also read at runtime by `App.jsx` (`import.meta.env.BASE_URL`) as the router's `basename`. If you move to a custom domain or a user/org root page, change `base` back to `/`.
