@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import tenantsBuildingImg from "@/assets/images/tenants-building.jpg";
-import edelweissLogo from "@/assets/images/tenant-edelweiss-logo.jpg";
+import edelweissLogo from "@/assets/images/tenant-edelweiss-logo.png";
 import wisconsinCheeseMartLogo from "@/assets/images/tenant-wisconsin-cheese-mart-logo.png";
 import luckyCloverImg from "@/assets/images/tenant-lucky-clover.jpg";
 import rwbLogo from "@/assets/images/tenant-rwb-logo.png";
