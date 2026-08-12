@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import ELEVATION_IMG from "@/assets/images/elevation-rendering.png";
 
+// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
 const ARCH_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ea97e4c56_IMG_8198.jpg";
-const ELEVATION_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/09e5accff_generated_dcf36b06.png";
 
 const specs = [
 { label: "Architects", value: "G. B. Ferry & A. C. Clas" },

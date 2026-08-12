@@ -1,18 +1,20 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import usingersLogo from "@/assets/images/usingers-logo.png";
+import madersLogo from "@/assets/images/maders-logo.png";
 
 const businesses = [
   {
     name: "Usinger's Famous Sausage",
     description:
       "A Milwaukee institution since 1880, crafting legendary sausages just steps from the Steinmeyer Building.",
-    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/ed141aa7a_usingers_white_background.png",
+    logo: usingersLogo,
   },
   {
     name: "Mader's Restaurant",
     description:
       "Milwaukee's iconic German restaurant since 1902, serving award-winning Bavarian cuisine on Old World Third Street.",
-    logo: "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/5b2a0f1e9_maders_white_background.png",
+    logo: madersLogo,
   },
 ];
 

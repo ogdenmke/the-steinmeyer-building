@@ -1,24 +1,26 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import tenantsBuildingImg from "@/assets/images/tenants-building.jpg";
+import edelweissLogo from "@/assets/images/tenant-edelweiss-logo.jpg";
+import wisconsinCheeseMartLogo from "@/assets/images/tenant-wisconsin-cheese-mart-logo.png";
+import luckyCloverImg from "@/assets/images/tenant-lucky-clover.jpg";
+import rwbLogo from "@/assets/images/tenant-rwb-logo.png";
 
 const tenants = [
   {
     name: "Edelweiss Cruises",
     description: "Scenic boat tours showcasing Milwaukee from a whole new perspective.",
-    logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/36fc535dc_Edelweiss_Logo.jpeg"],
+    logos: [edelweissLogo],
   },
   {
     name: "Wisconsin Cheese Mart",
     description: "A Wisconsin classic, serving the city's finest cheese and specialty goods.",
-    logos: ["https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/03b3442db_WisconsinCheeseMart.png"],
+    logos: [wisconsinCheeseMartLogo],
   },
   {
     name: "Lucky Clover & RWB",
     description: "Two lively local bars bringing warmth, great drinks, and unbeatable energy.",
-    logos: [
-      "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/908c35b3d_LuckyClover.jpg",
-      "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/d7730ca00_RWB_Logo.png",
-    ],
+    logos: [luckyCloverImg, rwbLogo],
   },
 ];
 
@@ -50,7 +52,7 @@ export default function Tenants() {
             </div>
             <div className="overflow-hidden">
               <img
-                src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/095ed6b0e_IMG_8193.JPG"
+                src={tenantsBuildingImg}
                 alt="Wisconsin Cheese Mart storefront in the Steinmeyer Building"
                 className="w-full h-auto object-contain"
               />
