@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin } from "lucide-react";
+import DISTRICT_IMG from "@/assets/images/district-plaza-proposed.png";
 
-const DISTRICT_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/10b375cd9_plaza_proposed_1344x768.png";
+// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
+const DISTRICT_BUILDING_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/33199e33a_IMG_8192.JPG";
 
 const landmarks = [
 { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks, Marquette University, and the city's premier downtown arena district" },
@@ -68,7 +70,7 @@ export default function District() {
               </div>
               <div className="overflow-hidden">
                 <img
-                  src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/33199e33a_IMG_8192.JPG"
+                  src={DISTRICT_BUILDING_IMG}
                   alt="The Steinmeyer Building along the Milwaukee River with the Edelweiss Cruises boat and Old World 3rd Street district signage"
                   className="w-full h-auto object-contain" />
               </div>

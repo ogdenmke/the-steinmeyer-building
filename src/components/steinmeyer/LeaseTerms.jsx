@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
+// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
+const LEASE_TERMS_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/81653bc12_IMG_8195.JPG";
+
 const terms = [
 { label: "Lease Rate", value: "$16.00/SF Gross" },
 { label: "Lease Type", value: "Full-service gross, landlord responsible for utilities" },
@@ -47,7 +50,7 @@ export default function LeaseTerms() {
             <div className="lg:col-span-3">
               <div className="overflow-hidden arch-radius-subtle">
                 <img
-                  src="https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/81653bc12_IMG_8195.JPG"
+                  src={LEASE_TERMS_IMG}
                   alt="Red brick facade with arched windows and string lights on the Steinmeyer Building"
                   className="w-full h-auto object-contain" />
               </div>

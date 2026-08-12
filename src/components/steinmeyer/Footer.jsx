@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-const ELEVATION_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/09e5accff_generated_dcf36b06.png";
+import ELEVATION_IMG from "@/assets/images/elevation-rendering.png";
 
 export default function Footer() {
   const ref = useRef(null);
