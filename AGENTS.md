@@ -11,7 +11,8 @@ Start with `README.md` for local setup and the GitHub Pages deploy workflow.
 - `src/pages/Home.jsx`: the page, composed from section components.
 - `src/components/steinmeyer/`: the page's content sections (Hero, AvailableSpace, LeaseTerms, Tenants, LocalBusiness, Architecture, District, Timeline, Contact, Footer).
 - `src/components/ui/`: shared UI primitives (shadcn/ui style, built on Radix).
-- `vite.config.js`: Vite config. `base` is the GitHub Pages project path; `App.jsx` reads it back via `import.meta.env.BASE_URL` as the router's `basename`, so the two must stay in sync.
+- `vite.config.js`: Vite config. `base` is `/` (site serves from the custom domain's root); `App.jsx` reads it back via `import.meta.env.BASE_URL` as the router's `basename`, so the two must stay in sync.
+- `public/CNAME`: holds the custom domain (`steinmeyerbuilding.com`); Vite copies it into every `dist/` build. Required on every deploy for the custom domain to persist, since this repo publishes via a custom Actions workflow rather than GitHub's classic branch-based Pages. Update alongside the Settings → Pages → Custom domain field if the domain ever changes.
 - `.github/workflows/deploy.yml`: builds and publishes `dist/` to GitHub Pages on push to `main`.
 
 ## Working Notes
