@@ -2,9 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin } from "lucide-react";
 import DISTRICT_IMG from "@/assets/images/district-plaza-proposed.png";
-
-// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
-const DISTRICT_BUILDING_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/33199e33a_IMG_8192.JPG";
+import DISTRICT_BUILDING_IMG from "@/assets/images/district-building.jpg";
 
 const landmarks = [
 { name: "Fiserv Forum", distance: "~1 block", description: "Home of the Milwaukee Bucks, Marquette University, and the city's premier downtown arena district" },

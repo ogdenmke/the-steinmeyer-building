@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-
-// TODO: self-host once available — still too large for the current image pipeline (>7MB source).
-const LEASE_TERMS_IMG = "https://media.base44.com/images/public/6a43ed8d020d5177787a9ecb/81653bc12_IMG_8195.JPG";
+import LEASE_TERMS_IMG from "@/assets/images/lease-terms.jpg";
 
 const terms = [
 { label: "Lease Rate", value: "$16.00/SF Gross" },
