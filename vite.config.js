@@ -7,13 +7,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
-  // The site is served from a GitHub Pages project path
-  // (https://<user>.github.io/the-steinmeyer-building/), not domain root, so
-  // both asset URLs and client-side routing (see App.jsx's Router basename,
-  // which reads import.meta.env.BASE_URL) need this subpath. If this site
-  // ever moves to a custom domain or a user/org root page, change this back
-  // to '/'.
-  base: '/the-steinmeyer-building/',
+  // Served from the custom domain's root (steinmeyerbuilding.com), so both
+  // asset URLs and client-side routing (see App.jsx's Router basename, which
+  // reads import.meta.env.BASE_URL) use '/'. If the custom domain is ever
+  // removed and the site falls back to the GitHub Pages project URL
+  // (https://<user>.github.io/the-steinmeyer-building/), change this back to
+  // '/the-steinmeyer-building/'.
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
